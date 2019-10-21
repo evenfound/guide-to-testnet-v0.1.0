@@ -14,7 +14,7 @@ EVEN testnet guide
 
 3. Перенести even, evenctl, ipfs в директорию even-data
 
-4. Вызвать командную строку. В переменную среду ос добавить в PATH  полный путь к even-data:
+4. Вызвать командную строку (Win+R cmd). В переменную среду ос добавить в PATH  полный путь к even-data:
 
 `cd C:/Users/username/even-data`
 
@@ -31,7 +31,7 @@ EVEN testnet guide
 
 ### Работа с пирами 
 
-1. Получить свой идентификатор 
+1. Вызвать командную строку (Win+R cmd). Получить свой идентификатор 
 
 `evenctl peer id`
 
