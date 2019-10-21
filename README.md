@@ -10,13 +10,13 @@ EVEN testnet guide
 
 1. Разархивировать файлы .zip
 
-2. Создать папку ~/even-data (В windows C:/Users/**username**/even-data)
+2. Создать папку ~/even-data (в Windows C:/Users/**username**/even-data)
 
 3. Перенести even, evenctl, ipfs в директорию even-data
 
 4. Вызвать командную строку. В переменную среду ос добавить в PATH  полный путь к even-data:
 
-`cd C:/Users/**username**/even-data`
+`cd C:/Users/username/even-data`
 
 5. Инициализировать конфигурации 
 
@@ -24,7 +24,7 @@ EVEN testnet guide
 
 После выполнения этой команды в директории $HOME/.config/even появляются конфигурационные файлы 
 
-6. Для запуска ноды нужны выполнять команду
+6. Для запуска ноды нужно выполнять команду
 
 `even start --testnet [--verbose]`
 
