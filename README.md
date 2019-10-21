@@ -13,7 +13,7 @@ EVEN testnet guide
 
 3. Copy **even, evenctl, ipfs** to the **even-data** directory
 
-4. Open command line (Win+R cmd). In the OS environment variable, add the full path to **even-data**:
+4. Open command line (Win+R shortcut, type "cmd"). Go to directory **even-data**:
 
 `cd C:/Users/username/even-data`
 
@@ -101,7 +101,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 3. Перенести even, evenctl, ipfs в директорию even-data
 
-4. Вызвать командную строку (Win+R cmd). В переменную среду ОС добавить в PATH  полный путь к even-data:
+4. Вызвать командную строку (сочетание клавиш Win+R, напечатать "cmd"). Перейти в директорию even-data:
 
 `cd C:/Users/username/even-data`
 
