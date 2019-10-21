@@ -47,15 +47,15 @@ EVEN testnet guide
 
 2. Создать пароль и мнемоническую фразу (когда вы вводите пароль, символы в командной строке не отображаются):
 
-`Enter the private passphrase for your new wallet: 
+`Enter the private passphrase for your new wallet: `
 
-Please confirm the phrase you just entered: 
+`Please confirm the phrase you just entered: `
 
-Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n
+`Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n`
 
-Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n
+`Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n`
 
-Your wallet generation mnemonic phrase is`
+`Your wallet generation mnemonic phrase is`
 
 3. После выполнение этой команды можно сразу перейти на генерацию аккаунта . Но для этого нужно сперва разблокировать 
 аккаунт с паролем который указали при создании кошелька. Введите:
