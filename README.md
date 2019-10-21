@@ -69,24 +69,21 @@ Your wallet generation mnemonic phrase is`
 скопируйте адрес вашего кошелька
 
 5. После генерации аккаунтов можно получить баланс 
-`evenctl wallet balance -l **адрес вашего кошелька**`
 
-2019/10/11 14:07:45 Call failed [Network: ]: wallet has no funds
+`evenctl wallet balance -l адрес_вашего_кошелька`
 
-и отправить платежную транзакцию 
+Чтобы пополнить баланс вашего тестового кошелька, отправьте адрес кошелька в чат https://t.me/eventalk1 или в раздел [Issues](https://github.com/evenfound/guide-to-testnet-v0.1.0/issues). 
 
-$ evenctl wallet tx pay  -t mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -f mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -v 1000
+6. Отправить платежную транзакцию
 
+`evenctl wallet tx pay  -t адрес_кошелька_получателя -f адрес_вашего_кошелька -v 1000`
 
 ### Работа с папками 
 
-Получение всех файлов в папке  shared / ledger
+1. Получение всех файлов в папке  shared / ledger
 
-$ evenctl folder list shared
-2019/10/11 14:11:34 shared:
-/home/yuri/.config/even/shared/GENESIS_a5214607c0b7f7866797691371de2e40133e8c56f5a2500ba877b9be4fe22f5d_1559652360000000000
+`evenctl folder list shared`
 
-Добавление файла в директорию 
+2. Добавление файла в директорию 
 
-$ evenctl folder write shared  -f /bin/bash
-2019/10/11 14:14:17 QmYtMhLMFzHV6VhkxjBwQqGMWwF8vcgUb7GuNRaYB91yLf
+`evenctl folder write shared  -f /bin/bash`
