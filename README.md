@@ -13,7 +13,7 @@ EVEN testnet guide
 
 3. Copy **even, evenctl, ipfs** to the **even-data** directory
 
-4. Open command line (Win+R shortcut, type "cmd"). Go to directory **even-data**:
+4. Open command line (Win+R shortcut, type "cmd", press "Enter"). Go to directory **even-data**:
 
 `cd C:/Users/username/even-data`
 
@@ -29,7 +29,7 @@ After executing this command, the configuration files appear in the $ HOME/.conf
 
 ### Peers 
 
-1. Open command line (Win+R cmd). Go to directory and get your node ID
+1. Open command line (Win+R, cmd). Go to directory and get your node ID
 
 `cd C:/Users/username/even-data`
 
@@ -101,7 +101,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 3. Перенести even, evenctl, ipfs в директорию even-data
 
-4. Вызвать командную строку (сочетание клавиш Win+R, напечатать "cmd"). Перейти в директорию even-data:
+4. Вызвать командную строку (нажмите комбинацию Win+R, введите в открывшемся окне команду "cmd" и нажмите "Ввод"). Перейти в директорию even-data:
 
 `cd C:/Users/username/even-data`
 
@@ -118,7 +118,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 ### Работа с пирами 
 
-1. Вызвать командную строку (Win+R cmd). Перейти в рабочую директорию и получить свой идентификатор 
+1. Вызвать командную строку (Win+R, cmd). Перейти в рабочую директорию и получить свой идентификатор 
 
 `cd C:/Users/username/even-data`
 
