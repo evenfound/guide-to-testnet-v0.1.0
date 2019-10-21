@@ -15,6 +15,7 @@ EVEN testnet guide
 3. Перенести even, evenctl, ipfs в директорию even-data
 
 4. Вызвать командную строку. В переменную среду ос добавить в PATH  полный путь к even-data:
+
 `cd C:/Users/**username**/even-data`
 
 5. Инициализировать конфигурации 
@@ -30,48 +31,45 @@ EVEN testnet guide
 
 ### Работа с пирами 
 
-Получить свой идентификатор 
+1. Получить свой идентификатор 
 
-$ evenctl peer id
-QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+`evenctl peer id`
 
-Получить список пиров в сети 
+2. Получить список пиров в сети 
 
-$ evenctl peer list
-QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
-QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
-QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
-QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
-
-
+`evenctl peer list`
 
 ### Создание кошелька 
 
-evenctl wallet create
-Enter the private passphrase for your new wallet: 
+1. Ввести в командную строку:
+
+`evenctl wallet create`
+
+2. Создать пароль и мнемоническую фразу (когда вы вводите пароль, символы в командной строке не отображаются):
+
+`Enter the private passphrase for your new wallet: 
 Please confirm the phrase you just entered: 
 Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n
 Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n
-Your wallet generation mnemonic phrase is
-******************************************************************************************
-special immense gentle trend trend language glass result wink toddler grain wise
+Your wallet generation mnemonic phrase is`
 
-.......................................................................................
+3. После выполнение этой команды можно сразу перейти на генерацию аккаунта . Но для этого нужно сперва разблокировать 
+аккаунт с паролем который указали при создании кошелька. Введите:
 
-При выполнении этой команды нужно указать пароль и мнемоническая фраза 
+`evenctl wallet unlock`
 
-После выполнение этой команды можно сразу перейти на генерацию аккаунта . Но для етого нужно сперва разблокировать 
-аккаунт с паролем который указали при создании кошелька  
+и укажите ваш пароль 
 
-$ evenctl wallet unlock
-Provide existing wallet private passphrase: 
-2019/10/11 13:56:25 Call completed [Network: testnet]: map[even:unlocked]
+`Provide existing wallet private passphrase: `
 
-$ evenctl wallet nextaccount
-2019/10/11 13:56:29 Call completed [Network: testnet]: map[even:address:"mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7" ]
+4. Создание аккаунта:
 
-После генерации аккаунтов можно получить баланс 
-$ evenctl wallet balance -l mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7
+`evenctl wallet nextaccount`
+
+скопируйте адрес вашего кошелька
+
+5. После генерации аккаунтов можно получить баланс 
+`evenctl wallet balance -l **адрес вашего кошелька**`
 
 2019/10/11 14:07:45 Call failed [Network: ]: wallet has no funds
 
