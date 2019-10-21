@@ -72,13 +72,13 @@ and copy an address of your wallet
 
 5. Get your balance after wallet generation
 
-`evenctl wallet balance -l адрес_вашего_кошелька`
+`evenctl wallet balance -l your_wallet_address`
 
 To top up the balance of your test wallet, send the wallet address to the chat https://t.me/eventalk1 or to [Issues](https://github.com/evenfound/guide-to-testnet-v0.1.0/issues). 
 
 6. Submit Payment Transaction
 
-`evenctl wallet tx pay  -t адрес_кошелька_получателя -f адрес_вашего_кошелька -v 1000`
+`evenctl wallet tx pay  -t recepient_wallet_address -f your_wallet_address -v 1000`
 
 ### Directories 
 
