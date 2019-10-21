@@ -29,7 +29,9 @@ After executing this command, the configuration files appear in the $ HOME/.conf
 
 ### Peers 
 
-1. Open command line (Win+R cmd). Get your node ID
+1. Open command line (Win+R cmd). Go to directory and get your node ID
+
+`cd C:/Users/username/even-data`
 
 `evenctl peer id`
 
@@ -116,7 +118,9 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 ### Работа с пирами 
 
-1. Вызвать командную строку (Win+R cmd). Получить свой идентификатор 
+1. Вызвать командную строку (Win+R cmd). Перейти в рабочую директорию и получить свой идентификатор 
+
+`cd C:/Users/username/even-data`
 
 `evenctl peer id`
 
