@@ -9,7 +9,7 @@ EVEN testnet guide
 
 1. [Download installation files](https://evenfound.org/product/download). Unzip .zip files
 
-2. Create a directory ~/even-data (в Windows C:/Users/**username**/even-data)
+2. Create a directory ~/even-data (for Windows C:/Users/**username**/even-data)
 
 3. Copy **even, evenctl, ipfs** to the **even-data** directory
 
