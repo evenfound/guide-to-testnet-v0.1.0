@@ -25,7 +25,7 @@ After executing this command, the configuration files appear in the $ HOME/.conf
 
 6. To start a node, you need to run the command
 
-`even start --testnet [--verbose]`
+`even start --testnet`
 
 ### Peers 
 
@@ -113,7 +113,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 6. Для запуска ноды нужно выполнять команду
 
-`even start --testnet [--verbose]`
+`even start --testnet`
 
 
 ### Работа с пирами 
