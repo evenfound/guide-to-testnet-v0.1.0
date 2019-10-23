@@ -1,9 +1,17 @@
 # guide-to-testnet-v0.1.0
 EVEN testnet guide
 
+Windows:
+
 [English Guide](https://github.com/evenfound/guide-to-testnet-v0.1.0#english-guide)
 
 [Инструкция на русском](https://github.com/evenfound/guide-to-testnet-v0.1.0#инструкция-на-русском)
+
+Linux:
+
+[English Guide, Linux](https://github.com/evenfound/guide-to-testnet-v0.1.0#english-guide-linux)
+
+# Windows
 ## English Guide
 ### Installation 
 
@@ -184,3 +192,109 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 2. Добавление файла в директорию 
 
 `evenctl folder write shared  -f /bin/bash`
+
+# Windows
+## English Guide Linux
+
+### Installation 
+
+1. Make application dir:
+
+	$ cd ~
+	$ mkdir even-data
+
+2. Copy even-data.zip to ~/even-data from path where archive downloaded:
+
+	$ cp ./even-data.zip ~/even-data
+
+3. Unzip archive:
+
+	$ cd ~/even-data
+	$ unzip even-data.zip 
+4. Add ~/even-data to PATH environment value:
+
+	$ PATH=$PATH:~/even-data
+	$ export $PATH
+
+	Note: After reboot entered value was lost, that you need to add last two string to ~/.profile using echo >
+
+5. The first initialize daemon is:
+	
+	$ cd ~/even-data
+	$ ./even init --verbose
+	
+	Note: If initialized successfully, in the $HOME dir will be created /.config/even dir. 
+	      If you want reinitialize all configurations (attention: that case will be destroy all early created key-pairs for all you wallets and all you coins!), 
+	      you may delete $HOME/.config/even dir.
+
+6. After initialization node daemon ready to work:
+
+	$ ./even start --testnet [--verbose]
+
+### Work with peers
+
+1. Get you node peer:
+
+	$ ./evenctl peer id
+	$ QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+
+2. Collate all running network peers:
+
+	$ ./evenctl peer list
+	$ QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+	$ QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+	$ QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+	$ QmRGzxoGii5jQDwQRdiEsiiRhHdZL7DJ6Fscy2ZUA95m5S
+
+### Wallet 
+
+1. Create and unlock:
+
+	$ ./evenctl wallet create
+	$ Enter the private passphrase for your new wallet: 
+	$ Please confirm the phrase you just entered: 
+	$ Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n
+	$ Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n
+	$ Your wallet generation mnemonic phrase is
+	$ ******************************************************************************************
+	$ special immense gentle trend trend language glass result wink toddler grain wise
+
+	$ .......................................................................................
+
+	Note: In command process you need enter password and textual seed phrase. Entered phrase we are recommend to save in to private storage.
+	       After that command runs you can start account generate. For this action you need unlock wallet with previous entered password first.
+
+	$ ./evenctl wallet unlock
+	$ Provide existing wallet private passphrase: 
+	$ 2019/10/11 13:56:25 Call completed [Network: testnet]: map[even:unlocked]
+
+2. Generate next (new - look BIP44 issue) account: 
+	
+	$ ./evenctl wallet nextaccount
+	$ 2019/10/11 13:56:29 Call completed [Network: testnet]: map[even:address:"mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7" ]
+
+3. Balance:
+
+	Note: After account generation you can got wallet balance:
+
+	$ ./evenctl wallet balance -l mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7
+	$ 2019/10/11 14:07:45 Call failed [Network: ]: wallet has no funds
+  
+  To top up the balance of your test wallet, send the wallet address to the chat https://t.me/eventalk1 or to [Issues](https://github.com/evenfound/guide-to-testnet-v0.1.0/issues). 
+
+	...and send payment transaction:
+
+	$ ./evenctl wallet tx pay  -t mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -f mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -v 1000
+
+### Directories maintenance: 
+
+1. Get the shared / ledger directories content:
+
+	$ ./evenctl folder list shared
+	$ 2019/10/11 14:11:34 shared:
+	$ /home/<user>/.config/even/shared/GENESIS_a5214607c0b7f7866797691371de2e40133e8c56f5a2500ba877b9be4fe22f5d_1559652360000000000
+
+2. Adding new file to directory: 
+
+	$ ./evenctl folder write shared  -f ~/.profile 
+	$ 2019/10/11 14:14:17 QmYtMhLMFzHV6VhkxjBwQqGMWwF8vcgUb7GuNRaYB91yLf
