@@ -70,7 +70,7 @@ and enter your password
 
 `evenctl wallet nextaccount`
 
-and copy an address of your wallet
+and copy and safe an address of your wallet which you see now in command line
 
 5. Get your balance after wallet generation
 
@@ -159,7 +159,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 `evenctl wallet nextaccount`
 
-скопируйте адрес вашего кошелька
+скопируйте и сохраните адрес вашего кошелька, который появился в командной стоке
 
 5. После генерации аккаунтов можно получить баланс 
 
