@@ -239,15 +239,15 @@ Pour démarrer un noeud (node) vous devez lancer cette commande
 
 2. Créez un mot de passe et une phrase de secours (lorsque vous entrez votre mot de passe, la ligne de commande reste vide):
 
-`Enter the private passphrase for your new wallet:
+`Enter the private passphrase for your new wallet:`
 
-Please confirm the phrase you just entered:
+`Please confirm the phrase you just entered:`
 
-Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n
+`Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n`
 
-Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n
+`Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n`
 
-Your wallet generation mnemonic phrase is`
+`Your wallet generation mnemonic phrase is`
 
 3. Après avoir exécuté ces commandes, vous pouvez créer un portefeuille. Mais pour cela vous avez besoin de déverrouiller votre portefeuille avec le mot de passe précédemment choisis. Entrer:
 
