@@ -7,6 +7,8 @@ Windows:
 
 [Инструкция на русском](https://github.com/evenfound/guide-to-testnet-v0.1.0#инструкция-на-русском)
 
+[Guide Français](https://github.com/evenfound/guide-to-testnet-v0.1.0#guide-français) 
+
 Linux:
 
 [English Guide, Linux](https://github.com/evenfound/guide-to-testnet-v0.1.0#english-guide-linux)
@@ -192,6 +194,84 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 2. Добавление файла в директорию 
 
 `evenctl folder write shared  -f /bin/bash`
+
+## Guide Français
+
+### Installation
+
+Guide vidéo
+
+1. [Telecharger le fichier d'installation](https://evenfound.org/ru/product/download). Unzip .zip les fichiers
+
+2. Créez un dossier  ~/even-data (Sur Windows C:/Users/username/even-data)
+
+3. Copier/coller even, evenctl, ipfs dans le dossier even-data 
+
+4. Ouvrir la ligne de commande (raccourcis Win+R, taper "cmd", appuyez sur "Enter"). Entrez dans le dossier even-data:
+
+`cd C:/Users/username/even-data`
+
+5. Débutez la configuration
+
+`even init --verbose`
+
+Après avoir exécuté cette commande , le fichier de configuration apparaît dans le dossier  $ HOME/.config/even 
+
+Pour démarrer un noeud (node) vous devez lancer cette commande
+
+`even start --testnet`
+
+### Peers
+
+1. Ouvrez la ligne de commande (Win+R, cmd). Allez dans les dossiers et obtenez votre “node ID”
+
+`cd C:/Users/username/even-data`
+`evenctl peer id`
+
+2. Obtenez une liste des peers online
+
+`evenctl peer list`
+
+### Création du portefeuille
+
+1. Entrez dans la ligne de commande:
+`evenctl wallet create`
+
+2. Créez un mot de passe et une phrase de secours (lorsque vous entrez votre mot de passe, la ligne de commande reste vide):
+
+`Enter the private passphrase for your new wallet:
+
+Please confirm the phrase you just entered:
+
+Do you have an existing mnemonic phrase you want to use? (n/no/y/yes) [no]: n
+
+Do you have an existing wallet seed phrase you want to use? (n/no/y/yes) [no]: n
+
+Your wallet generation mnemonic phrase is`
+
+3. Après avoir exécuté ces commandes, vous pouvez créer un portefeuille. Mais pour cela vous avez besoin de déverrouiller votre portefeuille avec le mot de passe précédemment choisis. Entrer:
+
+`evenctl wallet unlock`
+
+puis votre mot de passe
+
+`Provide existing wallet private passphrase:`
+
+4. Créez votre compte
+
+`evenctl wallet nextaccount`
+
+puis copier et sécuriser  l’adresse de votre portefeuille que vous voyez maintenant dans la ligne de commande
+
+5. Regardez votre solde
+`evenctl wallet balance -l your_wallet_address`
+
+Pour obtenir des even test rejoignez  https://t.me/eventalk1 
+
+6. Soumettre une transaction
+
+`evenctl wallet tx pay -t recepient_wallet_address -f your_wallet_address -v 1000`
+
 
 # Linux
 ## English Guide Linux
