@@ -7,6 +7,8 @@ EVEN testnet guide
 ## English Guide
 ### Installation 
 
+[Video guide](https://www.youtube.com/watch?v=X8l4rk6cq3s)
+
 1. [Download installation files](https://evenfound.org/product/download). Unzip .zip files
 
 2. Create a directory ~/even-data (for Windows C:/Users/**username**/even-data)
@@ -94,6 +96,8 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 ## Инструкция на русском
 ### Установка 
+
+[Видео](https://www.youtube.com/watch?v=s6abdpFdm-I)
 
 1. [Загрузить файлы установки](https://evenfound.org/ru/product/download). Разархивировать файлы .zip
 
