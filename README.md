@@ -193,7 +193,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 `evenctl folder write shared  -f /bin/bash`
 
-# Windows
+# Linux
 ## English Guide Linux
 
 ### Installation 
