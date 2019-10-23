@@ -282,7 +282,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
   
   To top up the balance of your test wallet, send the wallet address to the chat https://t.me/eventalk1 or to [Issues](https://github.com/evenfound/guide-to-testnet-v0.1.0/issues). 
 
-	...and send payment transaction:
+...and send payment transaction:
 
 	$ ./evenctl wallet tx pay  -t mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -f mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -v 1000
 
