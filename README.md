@@ -266,7 +266,7 @@ puis copier et sécuriser  l’adresse de votre portefeuille que vous voyez main
 5. Regardez votre solde
 `evenctl wallet balance -l your_wallet_address`
 
-Pour obtenir des even test rejoignez  https://t.me/eventalk1 
+Pour obtenir des even test rejoignez https://t.me/eventalk1 
 
 6. Soumettre une transaction
 
@@ -277,6 +277,8 @@ Pour obtenir des even test rejoignez  https://t.me/eventalk1
 ## English Guide Linux
 
 ### Installation 
+
+[Video](https://www.youtube.com/watch?v=-i-QPEV03w0)
 
 1. Make application dir:
 
@@ -310,6 +312,28 @@ Pour obtenir des even test rejoignez  https://t.me/eventalk1
 6. After initialization node daemon ready to work:
 
 	$ ./even start --testnet [--verbose]
+	
+#### The short description of the first step
+
+Download the file
+
+Type on the console
+
+`Wget  https://transfer.sh/10EFDS/even-data.zip`
+
+`Unzip even-data.zip`
+
+If get error install the unzip
+
+Type on the console
+
+`cd ~/even-data`
+
+`PATH=$PATH:~/even-data`
+
+`./even init –verbose`
+
+`./even start --testnet`
 
 ### Work with peers
 
