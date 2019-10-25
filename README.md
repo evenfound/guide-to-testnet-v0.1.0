@@ -107,7 +107,7 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 ## Инструкция на русском
 ### Установка 
 
-[Видео](https://www.youtube.com/watch?v=s6abdpFdm-I)
+[Видео](https://www.youtube.com/watch?v=s6abdpFdm-I), [Продолжение](https://www.youtube.com/watch?v=iFRC2mg6fzU)
 
 1. [Загрузить файлы установки](https://evenfound.org/ru/product/download). Разархивировать файлы .zip
 
@@ -277,6 +277,8 @@ Pour obtenir des even test rejoignez https://t.me/eventalk1
 ## English Guide Linux
 
 ### Installation 
+
+[Short video](https://www.youtube.com/watch?v=Z86zSvZMqOM)
 
 [Video](https://www.youtube.com/watch?v=-i-QPEV03w0)
 
