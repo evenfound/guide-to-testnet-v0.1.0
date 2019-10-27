@@ -94,6 +94,10 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 `evenctl wallet tx pay  -t recepient_wallet_address -f your_wallet_address -v 1000`
 
+7. Check your wallet address
+
+`evenctl wallet accounts`
+
 ### Directories 
 
 1. List all files in a folder  shared / ledger
@@ -185,6 +189,10 @@ To top up the balance of your test wallet, send the wallet address to the chat h
 
 `evenctl wallet tx pay  -t адрес_кошелька_получателя -f адрес_вашего_кошелька -v 1000`
 
+7. Посмотреть адрес своего кошелька
+
+`evenctl wallet accounts`
+
 ### Работа с папками 
 
 1. Получение всех файлов в папке  shared / ledger
@@ -271,6 +279,10 @@ Pour obtenir des even test rejoignez https://t.me/eventalk1
 6. Soumettre une transaction
 
 `evenctl wallet tx pay -t recepient_wallet_address -f your_wallet_address -v 1000`
+
+7. Vérifiez l'adresse de votre portefeuille
+
+`evenctl wallet accounts`
 
 
 # Linux
@@ -391,6 +403,10 @@ Type on the console
 ...and send payment transaction:
 
 	$ ./evenctl wallet tx pay  -t mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -f mm65wXwTEKyc2vGksSuTTzJBu54AuS2yN7 -v 1000
+	
+4. Check your wallet address
+
+`evenctl wallet accounts`
 
 ### Directories maintenance: 
 
